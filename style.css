@@ -1,0 +1,426 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 0.5rem;
+}
+
+.sidebar {
+  width: 340px;
+  border-radius: 1rem;
+  background-color: #000;
+  margin-right: 0.5rem;
+  overflow: hidden;
+}
+
+.main-content {
+  /* background-color: blue; */
+  flex: 1;
+  border-radius: 1rem;
+  overflow: auto;
+  background-color: #2b2b2b;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.main-content::webkit-scrollbar {
+  display: none;
+}
+
+.music-player {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 72px;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  background-color: #2b2b2b;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 130px;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav-option {
+  line-height: 2.5rem;
+  opacity: 0.7;
+  padding: 0.5rem;
+}
+
+.nav-option:hover {
+  opacity: 1;
+}
+
+.nav-option i {
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+}
+
+.nav-option a {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.library {
+  background-color: #2b2b2b;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lib-option img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.icon {
+  font-size: 1rem;
+  opacity: 0.65;
+  margin-right: 1rem;
+  display: flex;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.box {
+  background-color: #232323;
+  height: 8rem;
+  border-radius: 0.75rem;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.2rem 1rem;
+}
+
+.box-p1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.box-p2 {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.badge {
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 0.25rem 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  height: 1.75rem;
+  width: fit-content;
+}
+
+.dark-badge {
+  background-color: #000;
+  color: #fff;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  z-index: 10;
+}
+
+.sticky-nav-icons {
+  margin-left: 0.85rem;
+}
+
+.sticky-nav-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+}
+
+.card {
+  background-color: #232323;
+  width: 170px;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-right: 1.1rem;
+  margin-top: 1rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.card-title {
+  font-weight: 750;
+}
+.card-info {
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+.footer {
+  height: 370px;
+  width: 700px;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.info-footer {
+  display: flex;
+  height: 250px;
+  /* margin-right: 2rem; */
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-links-group {
+  margin-left: -1rem;
+  /* padding: 1rem; */
+}
+
+.social-media {
+  display: flex;
+  width: 20%;
+  /* flex-direction: row; */
+  margin-right: -8rem;
+  /* margin-bottom: 1rem; */
+}
+
+.social-media-icon {
+  height: 1rem;
+  border-radius: 100%;
+  margin-left: 1rem;
+  background-color: #232323;
+  padding: 0.95rem;
+  font-size: 20px;
+}
+
+.social-media-icon:hover {
+  background-color: #49524c;
+}
+
+.social-media-icon a {
+  display: flex;
+}
+
+.top-links-group {
+  line-height: 2rem;
+}
+
+.top-links-group p {
+  font-weight: 800;
+}
+
+.top-links-group a {
+  opacity: 0.75;
+  font-size: 0.85rem;
+}
+
+.no-dot {
+  list-style-type: none;
+}
+
+.line {
+  width: 130%;
+  /* height: 10px; */
+  border-bottom: 1px solid white;
+  margin-top: 33px;
+  opacity: 0.25;
+}
+
+.music-player {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.album {
+  width: 25%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.album-img {
+  height: 3rem;
+  width: 3rem;
+  margin-left: 0.75rem;
+}
+
+.song-name {
+  font-size: 0.65rem;
+  margin-left: 1rem;
+  line-height: 9px;
+}
+
+.album-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.saving-icon {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 9px;
+}
+.daylight {
+  font-weight: 800;
+}
+
+.player {
+  width: 50%;
+  /* background-color: orange; */
+}
+
+.player-control-icon {
+  height: 1rem;
+  margin-right: 1rem;
+  opacity: 0.7;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-control-icon:hover {
+  opacity: 1;
+}
+
+.playback-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 70%;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+  background-color: #ddd;
+  border-radius: 100px;
+  height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background-color: #02fd5e;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+
+.controls {
+  width: 25%;
+  display: flex;
+  /* align-items: center; */
+}
+
+.control-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-left: 1rem;
+}
+
+.control-icon i {
+  padding: 0.4rem;
+  opacity: 0.75;
+}
+
+.control-icon i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.sound-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.75rem;
+}
+
+.red-volume:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.green-volume:hover {
+  color: #02fd5e;
+  cursor: pointer;
+}
+
+.range {
+  width: 7rem;
+  height: 0.2rem;
+  cursor: pointer;
+}
+
+/* .icon {
+  margin: 1rem;
+
+} */
+
+/* .range {
+  width: 5rem;
+  height: 0.2rem;
+  margin-top: 1.4rem;
+} */
+
+/* .sound-control {
+  display: flex;
+  margin-left: 1rem;
+} */
